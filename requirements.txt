@@ -1,0 +1,13 @@
+unstructured[all-docs]
+pdf2image
+pytesseract
+Pillow
+numpy
+pandas
+chromadb
+sentence-transformers
+torch
+openai
+python-dotenv
+fastapi
+uvicorn

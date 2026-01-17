@@ -1,0 +1,17 @@
+# Python cache files (JUNK)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mac system files (JUNK)
+.DS_Store
+
+# Virtual Environments
+venv/
+.env
+
+# Database (The grader will generate this using your script)
+chroma_db/
+
+# Test outputs
+tests/test_output_images/

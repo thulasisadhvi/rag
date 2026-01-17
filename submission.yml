@@ -1,0 +1,20 @@
+version: 1.0
+project_name: "Multimodal RAG System"
+
+environment:
+  python_version: "3.12"
+  requirements: "requirements.txt"
+
+commands:
+  setup:
+    - "pip install -r requirements.txt"
+    - "python -m src.ingest"
+    - "ollama pull llava"
+
+  run_api:
+    - "uvicorn src.api.main:app --host 0.0.0.0 --port 8000"
+
+metadata:
+  description: "RAG system using Unstructured for parsing, CLIP for embeddings, ChromaDB for vector storage. Generation uses local LLaVA (via Ollama) for zero-cost visual grounding."
+  team_members:
+    - "Thulasi"
